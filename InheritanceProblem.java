@@ -3,7 +3,7 @@ public class InheritanceProblem {
         A b = new B();
         b.methodA(); // methodAClassB
         // b.methodB();// THis will give compiler error
-        B b2 = new B();
+        B b2 = (B) b;
         b2.methodA(); // methodAClassB
         b2.methodB(); // method.B
     }

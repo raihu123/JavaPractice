@@ -1,7 +1,7 @@
 class A{
-    A(){
-        System.out.println("Default Constructor");
-    }
+    // A(){
+    //     System.out.println("Default Constructor");
+    // }
     A(int val){
         System.out.println("parameterised " + val);
     }
@@ -9,8 +9,8 @@ class A{
 
 class B extends A{
     B(){
-        super();
-        // super(5); // THis will give compiler error as always super() or any version always first
+        // super();
+        super(5); // THis will give compiler error as always super() or any version always first
         System.out.println("B Constructor");
         // super(5); // THis will give compiler error as always super() or any version always first
     }
